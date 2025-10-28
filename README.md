@@ -20,4 +20,4 @@ This is the version equal to the course, will make the update with my informatio
 
 ## 💻 Contact
 
-rainir11r@gmail.com#
+rainir11r@gmail.com
