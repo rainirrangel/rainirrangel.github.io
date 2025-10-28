@@ -149,3 +149,9 @@
     transform: rotateY(180deg) scale(0.8);
   }
 }
+
+@media (max-width: 400px) {
+  .formacao::after {
+    transform: rotateY(180deg) scale(0.6);
+  }
+}

@@ -44,3 +44,15 @@
     font-size: 1.5rem;
   }
 }
+
+@media (max-width: 400px) {
+  .footer {
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+
+  .footer-texto,
+  .footer-contato li {
+    font-size: 1.125rem;
+  }
+}
