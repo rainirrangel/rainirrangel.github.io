@@ -1,0 +1,151 @@
+.formacao {
+  background-color: var(--black);
+  color: var(--white);
+  position: relative;
+}
+
+.formacao::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -50px;
+  left: 20px;
+  width: 130px;
+  height: 100px;
+  background: url(../img/detalhe.svg) no-repeat center;
+}
+
+.formacao-conteiner {
+  padding-top: 120px;
+}
+
+.subtitulo {
+  color: var(--darkBlack);
+  max-width: 5ch;
+}
+
+.formacao-texto {
+  color: var(--medium2Gray);
+}
+
+.formacao-texto strong {
+  color: var(--white);
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.faculdade {
+  flex: 1;
+  background: var(--darkBlack);
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--medium2Gray);
+  margin-bottom: 10px;
+}
+
+.faculdade-curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background-image: linear-gradient(var(--lightGreen), var(--mediumGreen));
+  position: absolute;
+  left: -24px;
+}
+
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  color: var(--medium2Gray);
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+
+.formacao-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--medium3Gray);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.cursos h3::before {
+  background: url(../img/cursos.svg) no-repeat center center;
+}
+
+.idiomas h3::before {
+  background: url(../img/idiomas.svg) no-repeat center center;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span {
+  color: var(--medium3Gray);
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .formacao-conteiner {
+    padding-top: 60px;
+  }
+
+  .subtitulo {
+    color: var(--white);
+    max-width: initial;
+  }
+
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+
+  .formacao::after {
+    left: initial;
+    right: 10px;
+    transform: rotateY(180deg) scale(0.8);
+  }
+}
